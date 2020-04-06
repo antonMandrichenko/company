@@ -29,6 +29,10 @@ const theme = createMuiTheme({
     h1: {
       fontSize: 98,
     },
+    body1: {
+      fontSize: 20,
+      fontFamily: "Noto Sans"
+    }
   },
 });
 

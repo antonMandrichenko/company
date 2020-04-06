@@ -6,15 +6,15 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: "block",
-      width: "75%",
-      margin: "10% auto",
+      width: "79%",
+      margin: "10% auto 8%",
       [theme.breakpoints.down("md")]: {
         fontSize: 80,
-        margin: "15% auto",
+        margin: "14% auto",
       },
       [theme.breakpoints.down("sm")]: {
         fontSize: 75,
-        margin: "17% auto",
+        margin: "15% auto 12%",
       },
       [theme.breakpoints.down("xs")]: {
         width: "85%",
