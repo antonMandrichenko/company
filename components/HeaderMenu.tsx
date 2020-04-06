@@ -1,15 +1,20 @@
 import * as React from "react";
 import { v4 } from "uuid";
-import { makeStyles, createStyles } from "@material-ui/core";
+import { makeStyles, createStyles, Theme } from "@material-ui/core";
 import Link from "next/link";
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      display: "block",
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+      },
+    },
     ul: {
       listStyleType: "none",
       margin: 0,
       textAlign: "center",
-      marginTop: "10%",
     },
     li: {
       display: "inline-block",
@@ -17,18 +22,18 @@ const useStyles = makeStyles(() =>
     },
     link: {
       fontSize: 20,
-      color: "green",
+      color: theme.palette.text.primary,
       position: "relative",
       textDecoration: "none",
       paddingBottom: 8,
       "&:before, &:after": {
         content: '""',
         position: "absolute",
-        bottom: 2,
+        bottom: -5,
         left: 0,
         right: 0,
-        height: 2,
-        backgroundColor: "blue",
+        height: 3,
+        backgroundColor: theme.palette.primary.main,
       },
       "&:before": {
         opacity: 0,
@@ -85,7 +90,7 @@ const menuItems = [
 const HeaderMenu = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <ul className={classes.ul}>
         {menuItems.map((item) => (
           <MenuItem key={v4()} text={item.text} href={item.href} />
