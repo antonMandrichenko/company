@@ -13,9 +13,7 @@ const useStyles = makeStyles(() =>
 
 interface IProps {}
 
-export default function Layer({
-  children,
-}: React.PropsWithChildren<IProps>) {
+export default function Layer({ children }: React.PropsWithChildren<IProps>) {
   const classes = useStyles();
 
   return (

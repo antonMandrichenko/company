@@ -32,7 +32,12 @@ const theme = createMuiTheme({
     body1: {
       fontSize: 20,
       fontFamily: "Noto Sans"
-    }
+    },
+    subtitle1: {
+      fontSize: 38,
+      fontFamily: "Noto Sans",
+      lineHeight: 1.45
+    },
   },
 });
 

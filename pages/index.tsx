@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import MainTitle from "../components/Home/MainTitle";
 import Layer from "../components/Layer";
 import LearnMore from "../components/Home/LearnMore";
 import FirstSlide from "../components/Home/FirstSlide";
+import ProjectsPreview from "../components/Home/ProjectsPreview";
 
 export default function Index() {
-  const divRef = useRef<HTMLDivElement>(null);
   const onScrollDown = () => {
-    console.log("smoooth");
-    if (divRef && divRef.current) {
-      divRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    scrollTo({
+      top: innerHeight,
+      behavior: "smooth"
+  });
   };
   return (
     <Layer>
@@ -18,9 +18,7 @@ export default function Index() {
         <MainTitle />
         <LearnMore onScrollDown={onScrollDown} />
       </FirstSlide>
-
-      <div style={{ height: "120vh" }}></div>
-      <div ref={divRef}></div>
+      <ProjectsPreview />
     </Layer>
   );
 }
