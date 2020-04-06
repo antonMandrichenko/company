@@ -4,22 +4,22 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
+    title: {
       display: "block",
       width: "79%",
-      margin: "10% auto 8%",
+      margin: "0 auto 10%",
       [theme.breakpoints.down("md")]: {
         fontSize: 80,
-        margin: "14% auto",
+        margin: "0 auto 15%",
       },
       [theme.breakpoints.down("sm")]: {
         fontSize: 75,
-        margin: "15% auto 12%",
+        margin: "0 auto 12%",
       },
       [theme.breakpoints.down("xs")]: {
         width: "85%",
         fontSize: 58,
-        margin: "29% auto",
+        margin: "5% auto 15%",
         wordBreak: "break-all",
       },
     },
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function MainTitle() {
   const classes = useStyles();
   return (
-    <Typography variant="h1" className={classes.root}>
+    <Typography variant="h1" className={classes.title}>
       Team of professionals to solve problems and realize your great ideas
     </Typography>
   );
