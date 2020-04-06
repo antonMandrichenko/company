@@ -36,7 +36,7 @@ const theme = createMuiTheme({
     subtitle1: {
       fontSize: 38,
       fontFamily: "Noto Sans",
-      lineHeight: 1.45
+      lineHeight: 1.25
     },
   },
 });

@@ -1,15 +1,17 @@
 import React from "react";
 import { makeStyles, createStyles, Theme } from "@material-ui/core";
 import FirstProjectReviewBlock from "./FirstProjectReviewBlock";
+import SecondProjectReviewBlock from "./SecondProjectReviewBlock";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: "flex",
       width: "79%",
-      padding: "5% 0",
+      padding: "3% 0",
       height: "100vh",
       margin: "0 auto 10%",
+      position: "relative",
       justifyContent: "space-between",
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
@@ -37,7 +39,9 @@ const ProjectsPreview: React.SFC = () => {
       <div className={classes.block}>
         <FirstProjectReviewBlock />
       </div>
-      <div className={classes.lastBlock}>Second</div>
+      <div className={classes.lastBlock}>
+        <SecondProjectReviewBlock />
+      </div>
     </div>
   );
 };

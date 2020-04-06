@@ -5,7 +5,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       paddingLeft: "10%",
-      height: 300,
       width: 600,
       position: "relative",
       "&:before": {
