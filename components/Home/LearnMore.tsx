@@ -44,7 +44,7 @@ const useStyles = makeStyles(() =>
     box: {
       marginTop: "1rem",
       position: "relative",
-      height: 40
+      height: 40,
     },
     "@keyframes arrow-movement": {
       "0%": {
@@ -61,10 +61,14 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default function LearnMore() {
+interface iProps {
+  onScrollDown: () => void;
+}
+
+const LearnMore: React.SFC<iProps> = ({ onScrollDown }) => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <div onClick={onScrollDown}>
       <Typography variant="body1" className={classes.root}>
         Learn More
       </Typography>{" "}
@@ -72,6 +76,8 @@ export default function LearnMore() {
         <div className={clsx(classes.arrow, classes.arrowFirst)}></div>
         <div className={clsx(classes.arrow, classes.arrowSecond)}></div>
       </div>
-    </React.Fragment>
+    </div>
   );
-}
+};
+
+export default LearnMore;
