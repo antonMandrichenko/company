@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
+import Layer from "../components/Layer";
 
-export default function Index() {
-  return <Box>Contacts</Box>;
+export default function Contacts() {
+  return <Layer>Contacts</Layer>;
 }

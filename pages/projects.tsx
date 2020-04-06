@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
+import Layer from "../components/Layer";
 
-export default function Index() {
-  return <Box>Projects</Box>;
+export default function Projects() {
+  return <Layer>Projects</Layer>;
 }

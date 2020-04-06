@@ -9,7 +9,7 @@ const theme = createMuiTheme({
     text: {
       primary: "#000",
       secondary: "#A0A4A8",
-      disabled: "#E8E8E8"
+      disabled: "#E8E8E8",
     },
     secondary: {
       main: "#19857b",
@@ -18,14 +18,26 @@ const theme = createMuiTheme({
       main: "#E93C3C",
     },
     warning: {
-      main: "#E89806"
+      main: "#E89806",
     },
     background: {
-      default: "#fff",
+      paper: "#E5E5E5",
     },
   },
   typography: {
     fontFamily: ["Montserrat", "Noto Sans", "sans-serif"].join(","),
+    h1: {
+      fontSize: 98,
+    },
+    body1: {
+      fontSize: 20,
+      fontFamily: "Noto Sans"
+    },
+    subtitle1: {
+      fontSize: 38,
+      fontFamily: "Noto Sans",
+      lineHeight: 1.25
+    },
   },
 });
 
