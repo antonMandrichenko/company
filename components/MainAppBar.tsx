@@ -4,6 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import HeaderMenu from "./HeaderMenu";
+import Link from "next/link";
 const Logo = require("../assets/main_title.png");
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -27,7 +28,11 @@ export default function MainAppBar() {
   return (
     <div className={classes.grow}>
       <Toolbar>
-        <img src={Logo} alt="Logo" />
+        <Link href="/">
+          <a>
+            <img src={Logo} alt="Logo" />
+          </a>
+        </Link>
         <div className={classes.grow} />
         <IconButton
           edge="start"

@@ -1,11 +1,11 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
-import MainAppBar from "../components/MainAppBar";
+import MainTitle from "../components/MainTitle";
+import Layer from "../components/Layer";
 
 export default function Index() {
   return (
-      <Box>
-        <MainAppBar />
-      </Box>
+    <Layer>
+      <MainTitle />
+    </Layer>
   );
 }

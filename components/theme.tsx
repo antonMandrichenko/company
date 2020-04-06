@@ -9,7 +9,7 @@ const theme = createMuiTheme({
     text: {
       primary: "#000",
       secondary: "#A0A4A8",
-      disabled: "#E8E8E8"
+      disabled: "#E8E8E8",
     },
     secondary: {
       main: "#19857b",
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
       main: "#E93C3C",
     },
     warning: {
-      main: "#E89806"
+      main: "#E89806",
     },
     background: {
       default: "#fff",
@@ -26,6 +26,9 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: ["Montserrat", "Noto Sans", "sans-serif"].join(","),
+    h1: {
+      fontSize: 98,
+    },
   },
 });
 
