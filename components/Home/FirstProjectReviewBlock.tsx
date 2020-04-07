@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down(1100)]: {
         width: 400,
       },
+      [theme.breakpoints.down("xs")]: {
+        width: "95%",
+      },
       "&:before": {
         content: '""',
         borderLeft: `solid 1px ${theme.palette.text.primary}`,
@@ -23,8 +26,11 @@ const useStyles = makeStyles((theme: Theme) =>
     margin: {
       marginTop: "2rem",
       [theme.breakpoints.down(1100)]: {
-        marginTop: "1rem",
+        margin: "1rem 0",
         fontSize: 17,
+      },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: 14,
       },
     },
     mainText: {
