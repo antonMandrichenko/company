@@ -12,7 +12,7 @@ const theme = createMuiTheme({
       disabled: "#E8E8E8",
     },
     secondary: {
-      main: "#19857b",
+      main: "#2a3540",
     },
     error: {
       main: "#E93C3C",
@@ -33,11 +33,21 @@ const theme = createMuiTheme({
       fontSize: 20,
       fontFamily: "Noto Sans"
     },
+    body2: {
+      fontSize: 15,
+      fontFamily: "Noto Sans"
+    },
     subtitle1: {
       fontSize: 38,
       fontFamily: "Noto Sans",
       lineHeight: 1.25
     },
+    subtitle2: {
+      fontSize: 40,
+      fontFamily: "Montserrat",
+      lineHeight: 1.25,
+      fontWeight: 500
+    }
   },
 });
 
