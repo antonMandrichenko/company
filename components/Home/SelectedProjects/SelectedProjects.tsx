@@ -1,13 +1,13 @@
 import React from "react";
 import { v4 } from "uuid";
-import { makeStyles, createStyles, Grid } from "@material-ui/core";
+import { makeStyles, createStyles, Grid, Theme } from "@material-ui/core";
 import HeaderButton from "../../HeaderButton";
 import ProjectBlock from "./ProjectBlock";
 import images, { ImagesOptions } from "../../../assets";
 import { projects } from "../../../constants/projects";
 import AppButton from "../AppButton";
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       width: "79%",
@@ -15,13 +15,16 @@ const useStyles = makeStyles(() =>
       height: "100vh",
       margin: "0 auto",
       position: "relative",
+      [theme.breakpoints.down("sm")]: {
+        height: "auto",
+      },
     },
     grid: {
       marginTop: 20,
     },
     button: {
       position: "absolute",
-      bottom: "3rem",
+      bottom: 0,
       right: 0,
     },
   })

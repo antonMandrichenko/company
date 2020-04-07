@@ -6,13 +6,10 @@ import { v4 } from "uuid";
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      display: "flex",
       width: "100%",
       padding: "1rem 0",
-      height: "50vh",
+      height: "auto",
       margin: "0 auto",
-      flexDirection: "column",
-      justifyContent: "space-between",
     },
     image: {
       width: "100%",

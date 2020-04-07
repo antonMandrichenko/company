@@ -5,6 +5,7 @@ import LearnMore from "../components/Home/LearnMore";
 import FirstSlide from "../components/Home/FirstSlide";
 import ProjectsPreview from "../components/Home/ProjectsPreview";
 import SelectedProjects from "../components/Home/SelectedProjects";
+import Clients from "../components/Home/Clients";
 
 export default function Index() {
   const onScrollDown = () => {
@@ -21,6 +22,7 @@ export default function Index() {
       </FirstSlide>
       <ProjectsPreview />
       <SelectedProjects />
+      <Clients />
     </Layer>
   );
 }
