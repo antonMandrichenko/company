@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, createStyles, Theme, Typography } from "@material-ui/core";
-import MoreServices from "./MoreServices";
+import AppButton from "./AppButton";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -39,7 +39,7 @@ const SecondProjectReviewBlock: React.SFC = () => {
         Project Management & Outsource
       </Typography>
       <Typography variant="subtitle1">Recruting</Typography>
-      <MoreServices/>
+      <AppButton text="More about services"/>
     </div>
   );
 };
