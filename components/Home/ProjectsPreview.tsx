@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "79%",
       padding: "3% 0",
       height: "100vh",
-      margin: "0 auto 10%",
+      margin: "0 auto",
       position: "relative",
       justifyContent: "space-between",
       [theme.breakpoints.down("sm")]: {
