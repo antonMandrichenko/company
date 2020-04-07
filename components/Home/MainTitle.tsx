@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     title: {
       display: "block",
-      width: "80%",
+      width: "79%",
       margin: "0 auto",
       [theme.breakpoints.down("md")]: {
         fontSize: 80,
