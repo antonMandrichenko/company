@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "3% 0",
       margin: "0 auto",
       position: "relative",
-      justifyContent: "space-around",
+      justifyContent: "space-between",
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
         height: "auto",
