@@ -6,21 +6,32 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     title: {
       display: "block",
-      width: "79%",
-      margin: "0 auto 10%",
+      width: "80%",
+      margin: "0 auto",
       [theme.breakpoints.down("md")]: {
         fontSize: 80,
-        margin: "0 auto 15%",
       },
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down(1100)]: {
         fontSize: 75,
-        margin: "0 auto 12%",
+      },
+      [theme.breakpoints.down(760)]: {
+        fontSize: 66,
       },
       [theme.breakpoints.down("xs")]: {
         width: "85%",
         fontSize: 58,
-        margin: "5% auto 15%",
-        wordBreak: "break-all",
+        marginTop: "5%",
+      },
+      [theme.breakpoints.down(450)]: {
+        fontSize: 47,
+        marginTop: "25%",
+      },
+      [theme.breakpoints.down(380)]: {
+        fontSize: 47,
+        marginTop: "10%",
+      },
+      [theme.breakpoints.down(330)]: {
+        fontSize: 38,
       },
     },
   })

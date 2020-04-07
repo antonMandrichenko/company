@@ -8,13 +8,18 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       display: "flex",
       width: "79%",
-      padding: "3% 0",
       height: "100vh",
+      padding: "3% 0",
       margin: "0 auto",
       position: "relative",
-      justifyContent: "space-between",
+      justifyContent: "space-around",
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
+        height: "auto",
+      },
+      [theme.breakpoints.down("xs")]: {
+        display: "block",
+        padding: "10% 0 0",
       },
     },
     block: {
