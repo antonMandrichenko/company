@@ -5,9 +5,6 @@ import Link from "next/link";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     link: {
-      position: "absolute",
-      bottom: 12,
-      left: -250,
       color: theme.palette.text.primary,
       cursor: "pointer",
       fontWeight: 400,
@@ -16,23 +13,15 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "2rem",
       lineHeight: "2rem",
       "&:hover": {
-        outlineWidth: 0,
-      },
-    },
-    arrowCircle: {
-      transition: "stroke-dashoffset .3s ease",
-      strokeDasharray: 95,
-      strokeDashoffset: 95,
-      zIndex: 3,
-      "&:hover": {
-        strokeDashoffset: 0,
-      },
+        color: theme.palette.primary.main,
+      }
     },
     arrowIcon: {
       position: "relative",
       top: -1,
       transition: "transform 0.3s ease",
       verticalAlign: "middle",
+      marginLeft: 10,
       "&:hover": {
         transform: "translate3d(7px, 0, 0)",
       },
@@ -40,12 +29,17 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const MoreServices: React.SFC = () => {
+interface IProps {
+  text: string;
+  href: string;
+}
+
+const AppButton: React.SFC<IProps> = ({ text, href }) => {
   const classes = useStyles();
   return (
-    <Link href="/services">
+    <Link href={href}>
       <a className={classes.link}>
-        More about sevices
+        {text}
         <svg
           className={classes.arrowIcon}
           xmlns="http://www.w3.org/2000/svg"
@@ -56,20 +50,12 @@ const MoreServices: React.SFC = () => {
           <g
             fill="none"
             stroke="#000"
-            stroke-width="1.5"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
           >
-            <circle
-              className={classes.arrowCircle}
-              cx="16"
-              cy="16"
-              r="15.12"
-            ></circle>
-            <path
-              // className={classes.arrowIconArrow}
-              d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-            ></path>
+            <circle cx="16" cy="16" r="15.12"></circle>
+            <path d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
           </g>
         </svg>
       </a>
@@ -77,4 +63,4 @@ const MoreServices: React.SFC = () => {
   );
 };
 
-export default MoreServices;
+export default AppButton;
