@@ -5,7 +5,7 @@ import HeaderButton from "../../HeaderButton";
 import ProjectBlock from "./ProjectBlock";
 import images, { ImagesOptions } from "../../../assets";
 import { projects } from "../../../constants/projects";
-
+import AppButton from "../AppButton";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -14,10 +14,16 @@ const useStyles = makeStyles(() =>
       padding: "3% 0",
       height: "100vh",
       margin: "0 auto",
+      position: "relative",
     },
-    grid :{
-      marginTop: 20
-    }
+    grid: {
+      marginTop: 20,
+    },
+    button: {
+      position: "absolute",
+      bottom: "3rem",
+      right: 0,
+    },
   })
 );
 
@@ -45,6 +51,9 @@ const SelectedProjects: React.SFC = () => {
           </Grid>
         ))}
       </Grid>
+      <div className={classes.button}>
+        <AppButton text="All projects" href="/projects" />
+      </div>
     </div>
   );
 };

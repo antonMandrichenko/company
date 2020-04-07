@@ -10,6 +10,11 @@ const useStyles = makeStyles(() =>
       width: 615,
       position: "relative",
     },
+    button: {
+      position: "absolute",
+      bottom: 12,
+      left: -250,
+    },
   })
 );
 
@@ -28,7 +33,9 @@ const SecondProjectReviewBlock: React.SFC = () => {
           Project Management & Outsource
         </Typography>
         <Typography variant="subtitle1">Recruting</Typography>
-        <AppButton text="More about services" />
+        <div className={classes.button}>
+          <AppButton text="More about services" href="/services" />
+        </div>
       </div>
     </Link>
   );

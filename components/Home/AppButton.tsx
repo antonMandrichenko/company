@@ -5,9 +5,6 @@ import Link from "next/link";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     link: {
-      position: "absolute",
-      bottom: 12,
-      left: -250,
       color: theme.palette.text.primary,
       cursor: "pointer",
       fontWeight: 400,
@@ -34,12 +31,13 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface IProps {
   text: string;
+  href: string;
 }
 
-const AppButton: React.SFC<IProps> = ({ text }) => {
+const AppButton: React.SFC<IProps> = ({ text, href }) => {
   const classes = useStyles();
   return (
-    <Link href="/services">
+    <Link href={href}>
       <a className={classes.link}>
         {text}
         <svg
