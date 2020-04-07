@@ -26,6 +26,11 @@ const useStyles = (router: NextRouter) =>
           marginRight: theme.spacing(2),
         },
       },
+      image: {
+        [theme.breakpoints.down(330)]: {
+          width: "50%",
+        },
+      }
     })
   );
 
@@ -38,7 +43,7 @@ export default function MainAppBar() {
       <Toolbar>
         <Link href="/">
           <a>
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" className={classes.image}/>
           </a>
         </Link>
         <div className={classes.grow} />

@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       width: "40%",
       margin: "40px 0 50px",
+      [theme.breakpoints.down(1100)]: {
+        fontSize: 30,
+      },
     },
   })
 );

@@ -1,11 +1,17 @@
 import React from "react";
 import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles, createStyles } from "@material-ui/core";
+import { makeStyles, createStyles, Theme } from "@material-ui/core";
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      position: "absolute",
+      bottom: 30,
+      left: "50%",
+      transform: "translate(-50%, 0)",
+    },
+    text: {
       display: "block",
       textAlign: "center",
     },
@@ -16,6 +22,9 @@ const useStyles = makeStyles(() =>
       top: 20,
       transformOrigin: "0 50%",
       transform: "translate3d(-50%, -50%, 0)",
+      [theme.breakpoints.down(700)]: {
+        left: "46%",
+      },
       "&:before, &:after": {
         content: '""',
         background: "black",
@@ -68,10 +77,10 @@ interface iProps {
 const LearnMore: React.SFC<iProps> = ({ onScrollDown }) => {
   const classes = useStyles();
   return (
-    <div onClick={onScrollDown}>
-      <Typography variant="body1" className={classes.root}>
+    <div onClick={onScrollDown} className={classes.root}>
+      <Typography variant="body1" className={classes.text}>
         Learn More
-      </Typography>{" "}
+      </Typography>
       <div className={classes.box}>
         <div className={clsx(classes.arrow, classes.arrowFirst)}></div>
         <div className={clsx(classes.arrow, classes.arrowSecond)}></div>

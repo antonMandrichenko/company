@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingLeft: "10%",
       width: 600,
       position: "relative",
+      [theme.breakpoints.down(1100)]: {
+        width: 400,
+      },
       "&:before": {
         content: '""',
         borderLeft: `solid 1px ${theme.palette.text.primary}`,
@@ -18,8 +21,17 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     margin: {
-      marginTop: "2rem"
-    }
+      marginTop: "2rem",
+      [theme.breakpoints.down(1100)]: {
+        marginTop: "1rem",
+        fontSize: 17,
+      },
+    },
+    mainText: {
+      [theme.breakpoints.down(1100)]: {
+        fontSize: 29,
+      },
+    },
   })
 );
 
@@ -28,7 +40,7 @@ const FirstProjectReviewBlock: React.SFC = () => {
 
   return (
     <div className={classes.root}>
-      <Typography variant="subtitle1">
+      <Typography variant="subtitle1" className={classes.mainText}>
         We like to work on projects and care about creating beautiful and usable
         interfaces. We will ensure that overall application is robust and easy
         to maintain.
