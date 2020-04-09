@@ -1,29 +1,26 @@
 import React from "react";
-import { makeStyles, createStyles, Grid, Typography } from "@material-ui/core";
+import { makeStyles, createStyles, Grid } from "@material-ui/core";
 import ServicesTitle from "./ServicesTitle";
-import {
-  developmentServices,
-  IDevelopmentServices,
-} from "../../constants/developmentServices";
+import { otherServices, IOtherServices } from "../../constants/otherServices";
 import ListItem from "./ListItem";
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      padding: "10% 0 8%",
+      // padding: "10% 0 8%",
     },
     title: {
-      marginBottom: "2rem"
-    }
+      marginBottom: "2rem",
+    },
   })
 );
 interface IProps {}
 
 export default function OtherServices(): React.ReactElement<IProps> {
   const classes = useStyles();
-  const renderService = (service: IDevelopmentServices) => (
+  const renderService = (service: IOtherServices) => (
     <React.Fragment>
-      <Typography variant="h4" className={classes.title}>{service.title}</Typography>
+      <ServicesTitle text={service.title} />
       {service.services.map((item) => (
         <ListItem key={item} text={item} />
       ))}
@@ -31,9 +28,8 @@ export default function OtherServices(): React.ReactElement<IProps> {
   );
   return (
     <div className={classes.root}>
-      <ServicesTitle text="Development & Support" />
-      <Grid container spacing={6}>
-        {developmentServices.map((service) => (
+      <Grid container spacing={2}>
+        {otherServices.map((service) => (
           <Grid item sm={4} key={service.title}>
             {renderService(service)}
           </Grid>
