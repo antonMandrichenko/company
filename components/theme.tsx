@@ -29,13 +29,25 @@ const theme = createMuiTheme({
     h1: {
       fontSize: 98,
     },
+    h2: {
+      fontSize: 124,
+      fontWeight: 500,
+    },
+    h3: {
+      fontSize: 34,
+      textTransform: "uppercase",
+    },
+    h4: {
+      fontSize: 26,
+      fontWeight: 500,
+    },
     body1: {
       fontSize: 20,
-      fontFamily: "Noto Sans"
+      fontFamily: "Noto Sans",
     },
     body2: {
       fontSize: 15,
-      fontFamily: "Noto Sans"
+      fontFamily: "Noto Sans",
     },
     subtitle1: {
       fontSize: 38,
@@ -46,8 +58,8 @@ const theme = createMuiTheme({
       fontSize: 40,
       fontFamily: "Montserrat",
       lineHeight: 1.25,
-      fontWeight: 500
-    }
+      fontWeight: 500,
+    },
   },
 });
 
