@@ -14,6 +14,7 @@ const useStyles = makeStyles(() =>
     image: {
       width: "100%",
       marginBottom: 20,
+      border: "1px solid black"
     },
     title: {
       display: "flex",
