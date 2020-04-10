@@ -20,7 +20,7 @@ export default function OtherServices(): React.ReactElement<IProps> {
     <div>
       <Grid container spacing={2}>
         {otherServices.map((service) => (
-          <Grid item sm={4} key={service.title}>
+          <Grid item lg={4} md={6} key={service.title}>
             {renderService(service)}
           </Grid>
         ))}
