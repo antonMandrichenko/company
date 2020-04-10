@@ -7,6 +7,8 @@ const images: ImagesOptions = {
   infinity: require("./infinity.png"),
   dygmaLogo: require("./dygma_logo.png"),
   infinityLogo: require("./infinity_logo.png"),
+  dygmaProjects: require("./dygma-projects.png"),
+  smarthLife: require("./smarth_life.png"),
 };
 
 export default images;
