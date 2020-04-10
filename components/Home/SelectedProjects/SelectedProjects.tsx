@@ -48,7 +48,7 @@ const SelectedProjects: React.SFC = () => {
     <div className={classes.root}>
       <HeaderButton text="Selected Projects" />
       <Grid container spacing={8} className={classes.grid}>
-        {projects.map((project) => (
+        {projects.slice(0, 2).map((project) => (
           <Grid item sm={6} key={v4()}>
             <ProjectBlock
               project={project}

@@ -32,12 +32,13 @@ const useStyles = makeStyles((theme: Theme) =>
 interface IProps {
   text: string;
   href: string;
+  as?: string;
 }
 
-const AppButton: React.SFC<IProps> = ({ text, href }) => {
+const AppButton: React.SFC<IProps> = ({ text, href, as }) => {
   const classes = useStyles();
   return (
-    <Link href={href}>
+    <Link href={href} as={as}>
       <a className={classes.link}>
         {text}
         <svg

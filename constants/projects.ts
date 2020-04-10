@@ -18,4 +18,11 @@ export const projects: IProject[] = [
     options: ["Marketing", "Backend"],
     text: "Development of marketing tool for social media",
   },
+  {
+    title: "SMARTH LIFE PATH",
+    image: "smarthLife",
+    options: ["Marketing", "Backend"],
+    text:
+      "Community platform that allows to define and rate community resources",
+  },
 ];
