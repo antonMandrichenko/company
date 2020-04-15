@@ -31,7 +31,8 @@ export default function Projects() {
         <ProjectsView
           image={imageSelect(projects[0].image)}
           project={projects[0]}
-          href={"./project"}
+          as={`./project/0`}
+          href={`./project/[pid]`}
           marginTop={8}
           marginButton={1}
         />
