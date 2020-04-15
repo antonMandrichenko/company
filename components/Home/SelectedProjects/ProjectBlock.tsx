@@ -14,7 +14,7 @@ const useStyles = makeStyles(() =>
     image: {
       width: "100%",
       marginBottom: 20,
-      border: "1px solid black"
+      boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)"
     },
     title: {
       display: "flex",
@@ -49,10 +49,10 @@ const ProjectBlock: React.SFC<IProps> = ({ project, image }) => {
         <div className={classes.options}>
           {project.options.map((option, i, arr) =>
             arr.length === 1 || i === arr.length - 1 ? (
-              <Typography key={v4()}>{option}</Typography>
+              <Typography key={v4()}>{option.name}</Typography>
             ) : (
               <React.Fragment key={v4()}>
-                <Typography>{option}</Typography>
+                <Typography>{option.name}</Typography>
                 <div className={classes.circle} />
               </React.Fragment>
             )

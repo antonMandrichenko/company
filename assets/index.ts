@@ -9,6 +9,12 @@ const images: ImagesOptions = {
   infinityLogo: require("./infinity_logo.png"),
   dygmaProjects: require("./dygma-projects.png"),
   smarthLife: require("./smarth_life.png"),
+  friendFilter: require("./friendFilter.png"),
+  humanos: require("./humanos.png"),
+  insurance: require("./insurance.png"),
+  lunie: require("./lunie.png"),
+  maxihost: require("./maxihost.png"),
+  taxFinance: require("./taxFinance.png"),
 };
 
 export default images;
