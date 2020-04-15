@@ -51,13 +51,12 @@ export default function Project(): React.ReactElement {
               alt={project.image}
               className={classes.image}
             />
-            <Margin size={2} />
             <Grid container spacing={4}>
               <Grid item sm={6}>
-                <Typography variant="body1" align="justify">{project.mainTextLeft}</Typography>
+                <Typography variant="h4" align="justify">{project.mainTextLeft}</Typography>
               </Grid>
               <Grid item sm={6}>
-              <Typography variant="body1" align="justify">{project.mainTextRight}</Typography>
+              <Typography variant="h4" align="justify">{project.mainTextRight}</Typography>
               </Grid>
             </Grid>
           </React.Fragment>
