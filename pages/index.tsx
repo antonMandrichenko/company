@@ -6,7 +6,6 @@ import FirstSlide from "../components/Home/FirstSlide";
 import ProjectsPreview from "../components/Home/ProjectsPreview";
 import SelectedProjects from "../components/Home/SelectedProjects";
 import Clients from "../components/Home/Clients";
-import Loading from "../components/Loading";
 
 export default function Index() {
   const onScrollDown = () => {
@@ -17,7 +16,6 @@ export default function Index() {
   };
   return (
     <Layer>
-      <Loading/>
       <FirstSlide>
         <MainTitle />
         <LearnMore onScrollDown={onScrollDown} />
