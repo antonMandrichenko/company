@@ -41,6 +41,11 @@ const theme = createMuiTheme({
       fontSize: 26,
       fontWeight: 500,
     },
+    h5: {
+      fontSize: 70,
+      fontWeight: 500,
+      lineHeight: 1,
+    },
     body1: {
       fontSize: 20,
       fontFamily: "Noto Sans",
