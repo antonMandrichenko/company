@@ -15,6 +15,12 @@ export default function Projects() {
       dygma: images.dygmaProjects,
       infinity: images.infinity,
       smarthLife: images.smarthLife,
+      friendFilter: images.friendFilter,
+      humanos: images.humanos,
+      insurance: images.insurance,
+      lunie: images.lunie,
+      maxihost: images.maxihost,
+      taxFinance: images.taxFinance,
     };
     return imagesObject[key];
   };
