@@ -8,6 +8,7 @@ import ProjectsView from "../components/Projects/ProjectsView";
 import { Grid } from "@material-ui/core";
 import Margin from "../components/Projects/Margin";
 import { v4 } from "uuid";
+import Loading from "../components/Loading";
 
 export default function Projects() {
   const imageSelect = (key: string) => {
@@ -20,6 +21,7 @@ export default function Projects() {
   };
   return (
     <Layer>
+      <Loading />
       <ServicesLayout>
         <MainPageTitle text="Projects" />
         <ProjectsView
