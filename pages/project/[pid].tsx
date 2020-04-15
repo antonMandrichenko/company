@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Layer from "../../components/Layer";
 import ServicesLayout from "../../components/Services/ServicesLayout";
 import { useRouter } from "next/router";
+import { projects } from "../../constants/projects";
 
 // interface IProps {
 //   // image: any;
@@ -12,14 +13,14 @@ import { useRouter } from "next/router";
 //   // text: string;
 // }
 
-export default function Project(props: any): React.ReactElement {
+export default function Project(): React.ReactElement {
   const router = useRouter();
   const { pid } = router.query;
-  console.log(props);
+  const [project] = useState(projects.find((project) => project.image === pid));
   return (
     <Layer>
       <ServicesLayout>
-        <div>{pid}</div>
+        <div>{project && project.title}</div>
       </ServicesLayout>
     </Layer>
   );

@@ -49,10 +49,10 @@ const ProjectBlock: React.SFC<IProps> = ({ project, image }) => {
         <div className={classes.options}>
           {project.options.map((option, i, arr) =>
             arr.length === 1 || i === arr.length - 1 ? (
-              <Typography key={v4()}>{option}</Typography>
+              <Typography key={v4()}>{option.name}</Typography>
             ) : (
               <React.Fragment key={v4()}>
-                <Typography>{option}</Typography>
+                <Typography>{option.name}</Typography>
                 <div className={classes.circle} />
               </React.Fragment>
             )
