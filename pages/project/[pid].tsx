@@ -7,6 +7,7 @@ import { Typography, Grid } from "@material-ui/core";
 import images from "../../assets";
 import { makeStyles, createStyles } from "@material-ui/core";
 import Margin from "../../components/Projects/Margin";
+import Services from "../../components/Project/Services";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -59,6 +60,8 @@ export default function Project(): React.ReactElement {
               <Typography variant="h4" align="justify">{project.mainTextRight}</Typography>
               </Grid>
             </Grid>
+            <Margin size={4} />
+            <Services services={project.options}/>
           </React.Fragment>
         )}
       </ServicesLayout>

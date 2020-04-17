@@ -18,14 +18,21 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
-interface IProps {
-  text: string;
+
+export enum EnumVariant {
+  body1 = "body1",
+  h4 = "h4",
 }
 
-export default function ListItem({ text }: IProps): React.ReactElement {
+interface IProps {
+  text: string;
+  variant: EnumVariant
+}
+
+export default function ListItem({ text, variant }: IProps): React.ReactElement {
   const classes = useStyles();
   return (
-    <Typography variant="body1" className={classes.root}>
+    <Typography variant={variant} className={classes.root}>
       {text}
     </Typography>
   );
