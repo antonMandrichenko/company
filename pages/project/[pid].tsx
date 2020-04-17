@@ -13,8 +13,7 @@ const useStyles = makeStyles(() =>
   createStyles({
     image: {
       width: "100%",
-      height: 700,
-      margin: "2rem auto",
+      margin: "2rem auto 3rem",
       boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
     },
   })
