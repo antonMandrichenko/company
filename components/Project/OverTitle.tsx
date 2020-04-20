@@ -31,7 +31,7 @@ const OverTitle: React.SFC<IProps> = ({ title, isSolution }) => {
     <Typography
       variant="subtitle2"
       className={classes.title}
-      style={{ right: isSolution ? -50 : 0}}
+      style={{ left: isSolution ? "" : -180, right: isSolution ? -140 : "" }}
     >
       {title}
     </Typography>

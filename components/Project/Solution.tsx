@@ -12,15 +12,12 @@ const useStyles = makeStyles(() =>
     root: {
       height,
     },
-    item: {
-      position: "relative",
-      height,
-    },
     text: {
       display: "flex",
       justifyContent: "center",
       flexDirection: "column",
       height: "inherit",
+      position: "relative",
     },
     image: {
       width: "100%",
@@ -47,11 +44,9 @@ const Solution: React.SFC<IProps> = ({ data }) => {
           className={classes.image}
         />
       </Grid>
-      <Grid item sm={6} className={classes.text}>
-        <AboutText text={data.text} />
-      </Grid>
-      <Grid item sm={1} className={classes.item}>
+      <Grid item sm={7} className={classes.text}>
         <OverTitle title="Solution" isSolution />
+        <AboutText text={data.text} />
       </Grid>
     </Grid>
   );

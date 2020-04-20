@@ -12,15 +12,12 @@ const useStyles = makeStyles(() =>
     root: {
       height,
     },
-    item: {
-      position: "relative",
-      height,
-    },
     text: {
       display: "flex",
       justifyContent: "center",
       flexDirection: "column",
       height: "inherit",
+      position: "relative",
     },
     image: {
       width: "100%",
@@ -40,10 +37,8 @@ const Challendge: React.SFC<IProps> = ({ data }) => {
   const getImage = (src: string): any => images[src];
   return (
     <Grid container className={classes.root} spacing={4}>
-      <Grid item sm={1} className={classes.item}>
+      <Grid item sm={7} className={classes.text}>
         <OverTitle title="Challendge" isSolution={false} />
-      </Grid>
-      <Grid item sm={6} className={classes.text}>
         <AboutText text={data.text} />
       </Grid>
       <Grid item sm={5} className={classes.image}>
