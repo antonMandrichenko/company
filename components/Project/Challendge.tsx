@@ -24,6 +24,8 @@ const useStyles = makeStyles(() =>
     },
     image: {
       width: "100%",
+      display: "flex",
+      alignItems: "center",
     },
   })
 );

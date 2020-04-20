@@ -22,10 +22,13 @@ const AboutText: React.SFC<IProps> = ({ text }) => {
   useEffect(() => {
     setSentencies(
       text.split(". ").reduce((acc: string[], item, i, arr) => {
-        if (even(i)) {
+        console.log(acc)
+        if (even(i) && i !== arr.length - 1) {
           return acc;
+        } else if (even(i) && i === arr.length - 1) {
+          return [...acc, item];
         } else {
-          return [...acc, arr[i-1] + '. ' + item];
+          return [...acc, arr[i - 1] + ". " + item];
         }
       }, [])
     );
