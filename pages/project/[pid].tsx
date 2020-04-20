@@ -9,6 +9,7 @@ import { makeStyles, createStyles } from "@material-ui/core";
 import Margin from "../../components/Projects/Margin";
 import Services from "../../components/Project/Services";
 import Challendge from "../../components/Project/Challendge";
+import Solution from "../../components/Project/Solution";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -64,6 +65,8 @@ export default function Project(): React.ReactElement {
             <Services services={project.options}/>
             <Margin size={4} />
             <Challendge data={project.challendge}/>
+            <Margin size={4} />
+            <Solution data={project.challendge}/>
           </React.Fragment>
         )}
       </ServicesLayout>
