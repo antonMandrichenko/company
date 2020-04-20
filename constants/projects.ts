@@ -3,6 +3,16 @@ export interface IOption {
   skills: string[];
 }
 
+export interface IChallendge {
+  text: string;
+  image: string;
+}
+
+export interface ISolution {
+  text: string;
+  image: string;
+}
+
 export interface IProject {
   title: string;
   image: string;
@@ -10,6 +20,8 @@ export interface IProject {
   text: string;
   mainTextLeft: string;
   mainTextRight: string;
+  challendge: IChallendge;
+  solution: ISolution;
 }
 
 export const projects: IProject[] = [
@@ -35,6 +47,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "INFINIGROW",
@@ -49,6 +71,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "SMARTH LIFE PATH",
@@ -70,6 +102,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "FRIEND FILTER",
@@ -100,6 +142,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "HUMAN OS (NETWORK OS)",
@@ -117,13 +169,7 @@ export const projects: IProject[] = [
       },
       {
         name: "Backend",
-        skills: [
-          "Nodejs",
-          "Apollo Server",
-          "KoaJS",
-          "TypeScript",
-          "Lodash",
-        ],
+        skills: ["Nodejs", "Apollo Server", "KoaJS", "TypeScript", "Lodash"],
       },
       { name: "Deployment", skills: ["Docker", "CircleCI", "AWS"] },
     ],
@@ -132,6 +178,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "TRAVEL INSURANCE",
@@ -147,6 +203,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "LUNIE",
@@ -154,7 +220,15 @@ export const projects: IProject[] = [
     options: [
       {
         name: "Frontend",
-        skills: ["VueJS", "Veux", "Vuetify", "Apollo Client", "Apollo Cache", "GraphQL", "Axios"],
+        skills: [
+          "VueJS",
+          "Veux",
+          "Vuetify",
+          "Apollo Client",
+          "Apollo Cache",
+          "GraphQL",
+          "Axios",
+        ],
       },
       { name: "Deployment", skills: ["Docker", "CircleCI", "DigitalOcean"] },
     ],
@@ -164,6 +238,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "MAXIHOST",
@@ -179,6 +263,16 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
   {
     title: "TAX FINANCE",
@@ -194,5 +288,15 @@ export const projects: IProject[] = [
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
     mainTextRight:
       "Its functionalities have been tested and validated by professionals, guaranteeing a revolutionary combination of features with an ergonomic split design.",
+    challendge: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
+    solution: {
+      text:
+        "The keycaps of the Raise have the standard OEM profile. This is the most common profile keycaps used in mechanical keyboards. There are 60 standard keycaps and 8 special keycaps. You can either get PBT double-injected keycaps or ABS laser-etched keycaps. PBT-ABS Double Injection Keycaps: made by a double-injection process where 2 types of material, PBT and ABS, are injected into a mold to create the keycap. Available languages: English US ANSI layout and the English UK ISO layout are offered in PBT.",
+      image: "dygma",
+    },
   },
 ];

@@ -8,6 +8,8 @@ import images from "../../assets";
 import { makeStyles, createStyles } from "@material-ui/core";
 import Margin from "../../components/Projects/Margin";
 import Services from "../../components/Project/Services";
+import Challendge from "../../components/Project/Challendge";
+import Solution from "../../components/Project/Solution";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -47,7 +49,7 @@ export default function Project(): React.ReactElement {
             </Typography>
             <Margin size={2} />
             <img
-              src={getImage(project.image)}
+              src={getImage(`main_${project.image}`)}
               alt={project.image}
               className={classes.image}
             />
@@ -61,6 +63,10 @@ export default function Project(): React.ReactElement {
             </Grid>
             <Margin size={4} />
             <Services services={project.options}/>
+            <Margin size={4} />
+            <Challendge data={project.challendge}/>
+            <Margin size={4} />
+            <Solution data={project.challendge}/>
           </React.Fragment>
         )}
       </ServicesLayout>
