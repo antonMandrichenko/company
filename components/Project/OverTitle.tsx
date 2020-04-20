@@ -7,8 +7,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "auto",
       transform: "rotate(270deg)",
       position: "absolute",
-      bottom: "30%",
-      right: 0,
+      bottom: "20%",
       "&:before": {
         content: '""',
         borderBottom: `solid 1px ${theme.palette.text.primary}`,
@@ -23,12 +22,17 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface IProps {
   title: string;
+  isSolution: boolean;
 }
 
-const OverTitle: React.SFC<IProps> = ({ title }) => {
+const OverTitle: React.SFC<IProps> = ({ title, isSolution }) => {
   const classes = useStyles();
   return (
-    <Typography variant="subtitle2" className={classes.title}>
+    <Typography
+      variant="subtitle2"
+      className={classes.title}
+      style={{ right: isSolution ? -50 : 0}}
+    >
       {title}
     </Typography>
   );

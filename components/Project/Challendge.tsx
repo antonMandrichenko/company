@@ -41,7 +41,7 @@ const Challendge: React.SFC<IProps> = ({ data }) => {
   return (
     <Grid container className={classes.root} spacing={4}>
       <Grid item sm={1} className={classes.item}>
-        <OverTitle title="Challendge" />
+        <OverTitle title="Challendge" isSolution={false} />
       </Grid>
       <Grid item sm={6} className={classes.text}>
         <AboutText text={data.text} />
