@@ -2,8 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import ServicesTitle from "./ServicesTitle";
 import { otherServices, IOtherServices } from "../../constants/otherServices";
-import ListItem from "./ListItem";
-
+import ListItem, { EnumVariant } from "./ListItem";
 
 interface IProps {}
 
@@ -12,7 +11,7 @@ export default function OtherServices(): React.ReactElement<IProps> {
     <React.Fragment>
       <ServicesTitle text={service.title} />
       {service.services.map((item) => (
-        <ListItem key={item} text={item} />
+        <ListItem key={item} text={item} variant={EnumVariant.body1} />
       ))}
     </React.Fragment>
   );

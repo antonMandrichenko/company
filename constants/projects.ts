@@ -19,7 +19,15 @@ export const projects: IProject[] = [
     options: [
       {
         name: "Frontend",
-        skills: ["ReactJS", "MaterialUI", "React Hooks", "Lerna"],
+        skills: ["ElectronJS", "ReactJS", "MaterialUI", "React Hooks"],
+      },
+      {
+        name: "API",
+        skills: ["Lerna", "JavaScript", "ES6", "SerialPortJS"],
+      },
+      {
+        name: "Machine Learning",
+        skills: ["Arduino Zero", "Firmware", "Node Addons"],
       },
     ],
     text: "Software for the most advance keyboard for gamers",
@@ -31,7 +39,11 @@ export const projects: IProject[] = [
   {
     title: "INFINIGROW",
     image: "infinity",
-    options: [{ name: "Frontend", skills: ["ReactJS", "Styled Components"] }],
+    options: [
+      { name: "Frontend", skills: ["ReactJS", "Webpack", "PostCSS"] },
+      { name: "Backend", skills: ["NodeJS", "Express", "Postgres"] },
+      { name: "Deployment", skills: ["Docker", "Jenkins", "AWS"] },
+    ],
     text: "Development of marketing tool for social media",
     mainTextLeft:
       "Raise is an ergonomic mechanical keyboard designed to enhance performance and comfort, and prevent long-term injuries caused by many hours spent on a keyboard.",
@@ -50,6 +62,7 @@ export const projects: IProject[] = [
         name: "Backend",
         skills: ["NestJS", "Apollo Server", "GraphQL"],
       },
+      { name: "Deployment", skills: ["Docker", "CircleCI", "Heroku"] },
     ],
     text:
       "Community platform that allows to define and rate community resources",
@@ -102,6 +115,17 @@ export const projects: IProject[] = [
           "Lodash",
         ],
       },
+      {
+        name: "Backend",
+        skills: [
+          "Nodejs",
+          "Apollo Server",
+          "KoaJS",
+          "TypeScript",
+          "Lodash",
+        ],
+      },
+      { name: "Deployment", skills: ["Docker", "CircleCI", "AWS"] },
     ],
     text: "Operating System for Healthy Living",
     mainTextLeft:
@@ -130,8 +154,9 @@ export const projects: IProject[] = [
     options: [
       {
         name: "Frontend",
-        skills: ["VueJS", "Veux", "Vuetify"],
+        skills: ["VueJS", "Veux", "Vuetify", "Apollo Client", "Apollo Cache", "GraphQL", "Axios"],
       },
+      { name: "Deployment", skills: ["Docker", "CircleCI", "DigitalOcean"] },
     ],
     text:
       "Manage your staking portfolio, participate in governance, all in one place.",

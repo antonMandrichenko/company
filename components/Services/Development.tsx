@@ -5,7 +5,7 @@ import {
   developmentServices,
   IDevelopmentServices,
 } from "../../constants/developmentServices";
-import ListItem from "./ListItem";
+import ListItem, { EnumVariant } from "./ListItem";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -13,8 +13,8 @@ const useStyles = makeStyles(() =>
       padding: "10% 0 8%",
     },
     title: {
-      marginBottom: "2rem"
-    }
+      marginBottom: "2rem",
+    },
   })
 );
 interface IProps {}
@@ -23,9 +23,11 @@ export default function Development(): React.ReactElement<IProps> {
   const classes = useStyles();
   const renderService = (service: IDevelopmentServices) => (
     <React.Fragment>
-      <Typography variant="h4" className={classes.title}>{service.title}</Typography>
+      <Typography variant="h4" className={classes.title}>
+        {service.title}
+      </Typography>
       {service.services.map((item) => (
-        <ListItem key={item} text={item} />
+        <ListItem key={item} text={item} variant={EnumVariant.body1} />
       ))}
     </React.Fragment>
   );
