@@ -43,7 +43,7 @@ const Challendge: React.SFC<IProps> = ({ data }) => {
       </Grid>
       <Grid item sm={5} className={classes.image}>
         <img
-          src={getImage(data.image)}
+          src={getImage(`challendge_${data.image}`)}
           alt={data.image}
           className={classes.image}
         />

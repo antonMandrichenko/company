@@ -15,6 +15,8 @@ const images: ImagesOptions = {
   lunie: require("./lunie.png"),
   maxihost: require("./maxihost.png"),
   taxFinance: require("./taxFinance.png"),
+  solution_dygma: require("./solution_dygma.png"),
+  challendge_dygma: require("./challendge_dygma.png"),
 };
 
 export default images;

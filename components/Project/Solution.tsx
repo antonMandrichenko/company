@@ -39,7 +39,7 @@ const Solution: React.SFC<IProps> = ({ data }) => {
     <Grid container className={classes.root} spacing={4}>
       <Grid item sm={5} className={classes.image}>
         <img
-          src={getImage(data.image)}
+          src={getImage(`solution_${data.image}`)}
           alt={data.image}
           className={classes.image}
         />
