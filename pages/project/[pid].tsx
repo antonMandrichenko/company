@@ -49,7 +49,7 @@ export default function Project(): React.ReactElement {
             </Typography>
             <Margin size={2} />
             <img
-              src={getImage(project.image)}
+              src={getImage(`main_${project.image}`)}
               alt={project.image}
               className={classes.image}
             />

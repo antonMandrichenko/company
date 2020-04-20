@@ -16,7 +16,16 @@ const images: ImagesOptions = {
   maxihost: require("./maxihost.png"),
   taxFinance: require("./taxFinance.png"),
   solution_dygma: require("./solution_dygma.png"),
-  challendge_dygma: require("./challendge_dygma.png"),
+  challendge_dygma: require("./solution_dygma.gif"),
+  main_dygma: require("./challendge_dygma.png"),
+  main_infinity: require("./infinity.png"),
+  main_humanos: require("./humanos.png"),
+  main_lunie: require("./lunie.png"),
+  main_friendFilter: require("./friendFilter.png"),
+  main_smarthLife: require("./smarth_life.png"),
+  main_insurance: require("./insurance.png"),
+  main_maxihost: require("./maxihost.png"),
+  main_taxFinance: require("./taxFinance.png"),
 };
 
 export default images;
